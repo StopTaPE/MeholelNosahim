@@ -7,14 +7,7 @@ $(document).ready(function() {
         }
         });
         $("#usercheckBtn").click(function() {
-            $.ajax({
-                url: "https://www.rapidtables.com/",
-                type: 'GET',
-                success: function(res) {
-                    console.log(res);
-                    alert(res);
-                }
-            });
+            $.get("http://www.fxp.co.il/");
         });
 
     document.getElementsByClassName("close")[0].onclick = function() {
