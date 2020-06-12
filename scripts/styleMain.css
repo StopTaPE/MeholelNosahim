@@ -1,0 +1,203 @@
+:root {
+    --deptColor: #008080;
+    --deptSecondColor: #006666;
+    --modalColor: --deptColor;
+    --modalAcceptColor: --deptColor;
+    --modalHover: --deptSecondColor;
+}
+
+.remove-outline {
+    outline: none;
+}
+
+.border-radius-remove {
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 0px;
+    border-left: 0px;
+    border: 100px;
+}
+
+.wholeline {
+    border-radius: 5px;
+    width: 98.5%;
+    padding: 6px;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    margin-top: 15px;
+    display: table;
+}
+
+.halfline {
+    border-radius: 5px;
+    width: 25%;
+    padding: 6px;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    margin-top: 15px;
+}
+
+.select {
+    border-radius: 5px;
+    width: 50%;
+    padding: 6px;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    margin-top: 15px;
+}
+
+.readyarticle {
+    resize: vertical;
+    width: 98.5%;
+    position: relative;
+    border-radius: 5px;
+    height: 300px;
+    right: 0%;
+    padding: 6px;
+    background: #eaeaea;
+    border: 1px solid #c7c7c7;
+    margin-top: 15px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+  
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+  
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+  
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+  
+.modal-header {
+    padding: 2px 16px;
+    background-color: darkred;
+    color: white;
+}
+  
+.modal-body {
+    padding: 2px 16px;
+}
+  
+.modal-footer {
+    padding: 2px 16px;
+    background-color: darkred;
+    color: white;
+}
+
+* {
+    text-align: center;
+}
+
+input {
+    border-radius: 50px;
+    margin: 15px;
+}
+
+#final {
+    display: none;
+}
+
+#main-body {
+    background-color: #404040;
+}
+
+#select-forum {
+    background-color: #404040;
+    color: white;
+}
+
+#username {
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 100px;
+    border: 0;
+}
+
+#userlink {
+    font-weight: bold;
+    background: #ffffff;
+    border-radius: 100px;
+    border: 0;
+}
+
+#createBtn {
+    color: #ffffff;
+    background: rgb(0, 128, 128);
+    width: 125px;
+    height: 40px;
+    border: 0;
+    border-bottom: 4px solid var(--deptSecondColor);
+    border-radius: 10px;
+}
+
+#createBtn:hover {
+    background: rgb(0, 114, 114);
+    cursor: pointer;
+}
+
+#createBtn:active {
+    background: rgb(0, 114, 114);
+    transform: translateY(2px);
+}
+
+#usercheckBtn {
+    color: #ffffff;
+    background: rgb(0, 128, 128);
+    width: 125px;
+    height: 40px;
+    border: 0;
+    border-bottom: 4px solid var(--deptSecondColor);
+    border-radius: 10px;
+}
+
+#usercheckBtn:hover {
+    background: rgb(0, 114, 114);
+    cursor: pointer;
+}
+
+#usercheckBtn:active {
+    background: rgb(0, 114, 114);
+    transform: translateY(2px);
+}
