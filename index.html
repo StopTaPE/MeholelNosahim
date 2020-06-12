@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="he">
+    <link rel="stylesheet" href="./scripts/normalize.min.css">
+    <script src="./scripts/jquery.min.js"></script>
+    <script src="./scripts/modernizr.min.js"></script>
+    <script src="./scripts/scriptMain.js"></script>
+    <script src="./scripts/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="./scripts/styleMain.css">
+    <head>
+        <meta charset="utf-8"/>
+        <title>מחולל קטגוריית מחשבים ואינטרנט</title>
+    </head>
+    <body dir="rtl" id="main-body" style="background-color: #404040;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <select id="select-forum" class="select remove-outline border-radius-add">
+                    <optgroup label="מחשבים ואינטרנט">
+                        <option value="4475">eBay וקניות ברשת</option>
+                        <option value="16">תמיכה טכנית – מחשבים</option>
+                        <option value="1250">עולם התוכנה</option>
+                        <option value="214">תמיכה בתוכנות</option>
+                        <option value="402">WhatsApp ומסרים מידיים</option>
+                        <option value="9696">Windows</option>
+                        <option value="45">תוכנות להורדה</option>
+                        <option value="464">בקשת תוכנות</option>
+                        <option value="1310">סחר ברשת</option>
+                        <option value="17">מדריכים - מחשבים</option>
+                        <option value="438">דרייברים</option>
+                        <option value="27">אבטחת מידע</option>
+                        <option value="160">רקעים למחשב</option>
+                        <option value="940">Linux</option>
+                    </optgroup>
+                </optgroup>
+            </select>
+            </td>
+        </tr>
+        <br>
+        <br>
+        <tr>
+            <td>
+                <input type="text" id="username" placeholder="שם המשתמש" class="halfline remove-outline border-radius-remove border-radius-add">
+                <input type="text" id="userlink" placeholder="קישור לפרופיל המשתמש" class="halfline remove-outline border-radius-remove border-radius-add">
+            </td>
+        </tr>
+        <br>
+        <tr>
+            <td>
+                <button id="createBtn" class="remove-outline">צור נוסח</button>
+                <button id="usercheckBtn" class="remove-outline">בדוק משתמש</button>
+            </td>
+        </tr>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <div class="modal-header">
+                <span class="close" id="close">&times;</span>
+                <h2>אזהרה!</h2>
+              </div>
+              <div class="modal-body">
+                <p>יכול להיות שלא מילאת את כל התיבות הנתונות.</p>
+                <p>אנא מלא אותן ונסה שוב.</p>
+              </div>
+              <div class="modal-footer">
+                <h3>אזהרה!</h3>
+              </div>
+            </div>
+        </div>
+        <div id="final">
+            <textarea dir="ltr" id="final-article-textarea" placeholder="...קוד הכתבה יופיע כאן" class="readyarticle"></textarea>
+        </div>
+    </body>
+</html>
